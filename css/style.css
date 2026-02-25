@@ -23,7 +23,6 @@ body {
     align-items: center;
     padding: 10px 50px;
     justify-content: flex-end;
-    backdrop-filter: blur(10px);
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
@@ -35,12 +34,16 @@ body {
 .logo {
     width: 200px;
     height: auto;
+}
+
+.logo-a {
     margin-right: auto;
 }
 
-.cart-icon {
-    width: 30px;
-    height: 30px;
+.spotify-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .nav-right a {
@@ -66,7 +69,7 @@ body {
 }
 
 .top-wraps {
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     padding: 30px;
 }
 
@@ -102,4 +105,90 @@ body {
 
 .artist-article p {
     font-weight: bold;
+}
+
+
+
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px;
+    gap: 100px;
+}
+
+.artist-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist-info-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 50%;
+}
+
+.artist-info-text-right h2,
+.artist-info-text-right h3,
+.artist-info-text-right p,
+.artist-info-text-left h2,
+.artist-info-text-left h3,
+.artist-info-text-left p {
+    color: white;
+    max-width: 600px;
+    margin: 40px 0;
+}
+
+.artist-info-text-right h2,
+.artist-info-text-right h3,
+.artist-info-text-right p {
+    color: white;
+    max-width: 600px;
+    margin: 40px 0;
+    text-align: right;
+}
+
+.artist-info-text-right h2,
+.artist-info-text-left h2 {
+    font-size: 80px;
+}
+
+.artist-info-text-right h3,
+.artist-info-text-left h3 {
+    font-size: 60px;
+}
+
+.artist-info-text-right h3 {
+    color: rgb(44, 104, 255);
+}
+
+.artist-info-text-left h3 {
+    color: rgb(144, 255, 121);
+}
+
+.artist-info-text-right p,
+.artist-info-text-left p {
+    font-weight: bold;
+    font-size: 16px;
+    width: 500px;
+}
+
+.artist-card {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.artist-card img {
+    width: 100%;
+    max-width: 600px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+figure {
+    margin: 0;
 }
