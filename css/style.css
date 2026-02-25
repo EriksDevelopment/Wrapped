@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: rgb(241, 241, 241);
+    --secondary-color: rgb(21, 21, 21);
+    --nav-color: white;
+    --primary-text-color: rgb(40, 39, 39);
+    --secondary-text-color: rgb(240, 240, 240);
+    --footer-text-color: rgb(149, 149, 149);
+}
+
 html,
 body {
     padding: 0;
@@ -11,7 +20,7 @@ body {
 }
 
 body {
-    background-color: black;
+    background-color: var(--primary-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -30,7 +39,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: white;
+    background-color: var(--nav-color);
 }
 
 .logo-a {
@@ -73,8 +82,6 @@ header.scrolled .logo-light {
     color: black;
 }
 
-.hero-wrapper {}
-
 .hero-section {
     height: 100vh;
 }
@@ -88,9 +95,8 @@ header.scrolled .logo-light {
     z-index: -1;
 }
 
-
 .top-wraps {
-    background-color: rgb(241, 241, 241);
+    background-color: var(--primary-color);
     padding: 30px;
     z-index: 1;
     border-top-left-radius: 40px;
@@ -99,6 +105,7 @@ header.scrolled .logo-light {
 
 .top-wraps h1 {
     text-align: center;
+    color: var(--primary-text-color);
 }
 
 .artist-wrapper {
@@ -129,13 +136,12 @@ header.scrolled .logo-light {
 
 .artist-article p {
     font-weight: bold;
+    color: var(--primary-text-color);
 }
-
-
 
 .info-section-wrapper {
     z-index: 1;
-    background-color: rgb(21, 21, 21);
+    background-color: var(--secondary-color);
 }
 
 .info-section {
@@ -164,7 +170,7 @@ header.scrolled .logo-light {
 .artist-info-text-left h2,
 .artist-info-text-left h3,
 .artist-info-text-left p {
-    color: white;
+    color: var(--secondary-text-color);
     max-width: 600px;
     margin: 40px 0;
 }
@@ -172,7 +178,6 @@ header.scrolled .logo-light {
 .artist-info-text-right h2,
 .artist-info-text-right h3,
 .artist-info-text-right p {
-    color: white;
     max-width: 600px;
     margin: 40px 0;
     text-align: right;
@@ -211,13 +216,11 @@ header.scrolled .logo-light {
 .artist-info-text-left a {
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-text-color);
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
-
 
 .artist-card1,
 .artist-card2 {
@@ -264,7 +267,7 @@ figure {
 }
 
 .subscribe-section {
-    background-color: white;
+    background-color: var(--primary-color);
     min-height: 30vh;
     display: flex;
     align-items: center;
@@ -288,6 +291,7 @@ figure {
 
 .subscribe-title h2 {
     font-size: 30px;
+    color: var(--primary-text-color);
 }
 
 .form {
@@ -301,6 +305,7 @@ figure {
 .form label {
     font-weight: 600;
     font-size: 25px;
+    color: var(--primary-text-color);
 }
 
 .form input {
@@ -328,6 +333,7 @@ figure {
 
 .checkbox-wrap label {
     font-size: 14px;
+    color: var(--primary-text-color);
 }
 
 .checkbox-wrap input {
@@ -336,7 +342,7 @@ figure {
 }
 
 .footer {
-    background-color: rgb(60, 60, 60);
+    background-color: var(--primary-color);
     padding: 50px;
-    color: rgb(149, 149, 149);
+    color: var(--footer-text-color);
 }
