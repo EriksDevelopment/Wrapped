@@ -263,6 +263,78 @@ figure {
     height: 20px;
 }
 
+.subscribe-section {
+    background-color: white;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.subscribe-info {
+    max-width: 500px;
+}
+
+.subscribe-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-title img {
+    width: 800px;
+    height: auto;
+}
+
+.subscribe-title h2 {
+    font-size: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form label {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.form input {
+    width: 300px;
+    padding: 8px 10px;
+}
+
+.form button {
+    padding: 10px;
+    width: 80px;
+    margin-left: auto;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-wrap label {
+    font-size: 14px;
+}
+
+.checkbox-wrap input {
+    width: 16px;
+    height: 16px;
+}
+
 .footer {
     background-color: rgb(60, 60, 60);
     padding: 50px;
