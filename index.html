@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrapped</title>
@@ -9,6 +10,53 @@
 
 <body>
 
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="/images/logo.png" alt="wrapped-logo">
+            <img class="cart-icon" src="/images/spotify-logo.png" alt="cart-icon">
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <video autoplay muted loop playsinline class="hero-vid">
+            <source src="/videos/hero-vid2.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="top-wraps">
+        <h1>TOP ARTISTS</h1>
+        <div class="artist-wrapper">
+            <article class="artist-article">
+                <img src="/images/centralcee.jpg">
+                <p>CENTRAL CEE</p>
+            </article>
+            <article class="artist-article">
+                <img src="/images/jhus.png">
+                <p>J HUS</p>
+            </article>
+            <article class="artist-article">
+                <img src="/images/oliviadean.webp">
+                <p>Olivia Dean</p>
+            </article>
+            <article class="artist-article">
+                <img src="/images/lewiscapaldi.jpg">
+                <p>Lewis Capaldi</p>
+            </article>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        }
+        else {
+            navbar.classList.remove("scrolled");
+        }
+    })
+</script>
 
 </html>
